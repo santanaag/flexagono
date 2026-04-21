@@ -1,0 +1,146 @@
+/*
+  Projeto: Gerador de Hexahexaflexágono
+  Autor: Adriano S.
+  Estilo principal da interface
+
+  Licença: GPL-3.0
+*/
+
+body {
+  font-family: Arial;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* ---------------- TABELA ---------------- */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+td, th {
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+/* permite scroll no celular */
+table {
+  display: block;
+  overflow-x: auto;
+}
+
+.tabela-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centraliza */
+  overflow-x: auto;        /* scroll no mobile */
+}
+
+.tabela-container table {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+/* ---------------- SELECT ---------------- */
+select {
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* ---------------- LISTA ---------------- */
+#listaImagens {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* ---------------- GRID ---------------- */
+#gridImagens {
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.grid img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid #555;
+  background: #111;
+}
+
+/* ---------------- CANVAS ---------------- */
+canvas {
+  width: 90vw;       /* ocupa a tela no celular */
+  max-width: 300px; /* limita no desktop */
+  height: auto;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+/* ---------------- BOTÕES ---------------- */
+button {
+  font-size: 18px;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* botão principal */
+.btn-gerar {
+  font-size: 20px;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: all 0.2s ease;
+}
+
+.btn-gerar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+}
+
+.btn-gerar:active {
+  transform: scale(0.97);
+}
+
+/* ---------------- MOBILE ---------------- */
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h2, h3 {
+    font-size: 18px;
+  }
+
+  button {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  canvas {
+    width: 95vw;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
