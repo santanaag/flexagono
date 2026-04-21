@@ -450,6 +450,7 @@ function processarTeste() {
     desenharTrianguloPasta(ctxV, "assets/img/img6.png", [     0, 3.0 * unith], 2 * unith, 1, 4);
     desenharTrianguloPasta(ctxV, "assets/img/img6.png", [  unit, 4.5 * unith], 2 * unith, 0, 5);
     desenharTrianguloPasta(ctxV, "assets/img/img6.png", [  unit, 4.5 * unith], 2 * unith, 1, 6);
+	imagemGerada = true;
 
 	
   gradeDeTriangulos(ctxF,unit,unith,"black",5);
