@@ -1,0 +1,75 @@
+/*
+  Projeto: Gerador de Hexahexaflexágono
+  Autor: Adriano S.
+  Estilo principal da interface
+
+  Licença: GPL-3.0
+*/
+
+body {
+  font-family: Arial;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+select {
+  font-size: 16px;
+}
+
+#listaImagens {
+  margin-top: 20px;
+  text-align: left;
+  display: inline-block;
+}
+#gridImagens {
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.grid img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid #555;
+  background: #111;
+}
+
+.btn-gerar {
+  font-size: 20px;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: all 0.2s ease;
+}
+
+.btn-gerar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+}
+
+.btn-gerar:active {
+  transform: scale(0.97);
+}

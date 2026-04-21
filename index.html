@@ -1,0 +1,78 @@
+<!--
+  Projeto: Gerador de Hexahexaflexágono
+  Autor: Adriano S.
+  Data: 2026
+
+  Descrição:
+  Ferramenta para gerar moldes de hexahexaflexágonos a partir de imagens,
+  com exportação em PDF para impressão.
+
+  Licença:
+  GNU General Public License v3.0
+
+  Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo
+  sob os termos da GNU GPL v3.
+
+  Repositório:
+  https://github.com/seuusuario/seuprojeto
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Seu Próprio Flexágono</title>
+
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- ligação com o CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+<h2>Upload de Imagens (até 6)</h2>
+
+<input type="file" id="upload" accept="image/*" multiple><br>
+
+<div id="listaImagens"></div>
+<div id="gridImagens"></div>
+
+<h3>Escolha das Faces</h3>
+
+<table>
+  <tr>
+    <th>Face</th>
+    <th>1</th><th>2</th><th>3</th>
+    <th>4</th><th>5</th><th>6</th>
+  </tr>
+  <tr>
+    <td>Imagem:</td>
+    <td><select id="f1"></select></td>
+    <td><select id="f2"></select></td>
+    <td><select id="f3"></select></td>
+    <td><select id="f4"></select></td>
+    <td><select id="f5"></select></td>
+    <td><select id="f6"></select></td>
+  </tr>
+</table>
+
+<button class="btn-gerar" onclick="processar()">
+  Gerar Hexahexaflexágono
+</button><br><br>
+
+<button onclick="processarTeste()">Teste</button>
+
+<button onclick="baixarPDFum()">Baixar PDF de uma página</button>
+
+<button onclick="baixarPDFfv()">Baixar PDF frente e verso</button><br>
+
+<canvas id="canvasF" width="1200" height="3812" style="width:200px; height:auto;border:1px solid black;"></canvas>
+
+<canvas id="canvasV" width="1200" height="3812" style="width:200px; height:auto;border:1px solid black;"></canvas>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
