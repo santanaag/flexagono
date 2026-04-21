@@ -1,0 +1,2 @@
+# flexagono
+Criação do hexahexaflexágono.
