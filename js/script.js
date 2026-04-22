@@ -349,9 +349,9 @@ function processar() {
     desenharTriangulo(ctxF, img, [  unit, 2.5 * unith], 2 * unith, 5, 1);
     desenharTriangulo(ctxF, img, [2*unit, 4.0 * unith], 2 * unith, 4, 2);
     desenharTriangulo(ctxF, img, [     0, 1.0 * unith], 2 * unith, 5, 3);
-    desenharTriangulo(ctxF, img, [  unit, 1.0 * unith], 2 * unith, 4, 4);
+    desenharTriangulo(ctxF, img, [  unit, 2.5 * unith], 2 * unith, 4, 4);
     desenharTriangulo(ctxF, img, [     0, 4.0 * unith], 2 * unith, 5, 5);
-    desenharTriangulo(ctxF, img, [2*unit, 2.5 * unith], 2 * unith, 4, 6);
+    desenharTriangulo(ctxF, img, [2*unit, 1.0 * unith], 2 * unith, 4, 6);
   });
   // triângulos 2,5,8,11,14,17 → imagem 5
   carregarImagem(5, img => {
@@ -416,9 +416,9 @@ function processarTeste() {
     desenharTrianguloPasta(ctxF, "assets/img/img3.png", [  unit, 2.5 * unith], 2 * unith, 5, 1);
     desenharTrianguloPasta(ctxF, "assets/img/img3.png", [2*unit, 4.0 * unith], 2 * unith, 4, 2);
     desenharTrianguloPasta(ctxF, "assets/img/img3.png", [     0, 1.0 * unith], 2 * unith, 5, 3);
-    desenharTrianguloPasta(ctxF, "assets/img/img3.png", [  unit, 1.0 * unith], 2 * unith, 4, 4);
+    desenharTrianguloPasta(ctxF, "assets/img/img3.png", [  unit, 2.5 * unith], 2 * unith, 4, 4);
     desenharTrianguloPasta(ctxF, "assets/img/img3.png", [     0, 4.0 * unith], 2 * unith, 5, 5);
-    desenharTrianguloPasta(ctxF, "assets/img/img3.png", [2*unit, 2.5 * unith], 2 * unith, 4, 6);
+    desenharTrianguloPasta(ctxF, "assets/img/img3.png", [2*unit, 1.0 * unith], 2 * unith, 4, 6);
   // triângulos 2,5,8,11,14,17 → imagem 5
     desenharTrianguloPasta(ctxF, "assets/img/img5.png", [     0, 1.0 * unith], 2 * unith, 0, 1);
     desenharTrianguloPasta(ctxF, "assets/img/img5.png", [2*unit, 4.0 * unith], 2 * unith, 3, 2);
