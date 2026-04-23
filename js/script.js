@@ -42,12 +42,26 @@ let ctxV = canvasV.getContext("2d");
 /*
                     Imagens Mosáico
 */
-
 document.getElementById("upload").addEventListener("change", function() {
-  const files = Array.from(this.files).slice(0, 6);
+  const novos = Array.from(this.files);
 
-  // RESET TOTAL
-  imagens = files;
+  // adiciona novos no começo
+  const combinado = [...novos, ...imagens];
+
+  // remove duplicatas pelo NOME
+  const semDuplicados = [];
+  const nomes = new Set();
+
+  combinado.forEach(file => {
+    if (!nomes.has(file.name)) {
+      nomes.add(file.name);
+      semDuplicados.push(file);
+    }
+  });
+
+  // limita a 6
+  imagens = semDuplicados.slice(0, 6);
+	
   limparTabela();
   mostrarNomes();
   atualizarSelects();
